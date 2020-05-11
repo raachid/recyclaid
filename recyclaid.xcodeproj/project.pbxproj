@@ -14,6 +14,11 @@
 		6B41C351246428F700CB5EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B41C350246428F700CB5EEF /* Assets.xcassets */; };
 		6B41C354246428F700CB5EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B41C353246428F700CB5EEF /* Preview Assets.xcassets */; };
 		6B41C357246428F700CB5EEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B41C355246428F700CB5EEF /* LaunchScreen.storyboard */; };
+		8C0A9531246941070012999C /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A9530246941070012999C /* Color+extension.swift */; };
+		8C0A95332469418D0012999C /* CategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95322469418D0012999C /* CategorieView.swift */; };
+		8C0A9535246941DB0012999C /* CategoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A9534246941DB0012999C /* CategoriesData.swift */; };
+		8C0A953724696C230012999C /* AvecBois.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A953624696C230012999C /* AvecBois.swift */; };
+		8C0A953924696D940012999C /* ChoosedWood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A953824696D940012999C /* ChoosedWood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		6B41C353246428F700CB5EEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B41C356246428F700CB5EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B41C358246428F700CB5EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0A9530246941070012999C /* Color+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
+		8C0A95322469418D0012999C /* CategorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieView.swift; sourceTree = "<group>"; };
+		8C0A9534246941DB0012999C /* CategoriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesData.swift; sourceTree = "<group>"; };
+		8C0A953624696C230012999C /* AvecBois.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvecBois.swift; sourceTree = "<group>"; };
+		8C0A953824696D940012999C /* ChoosedWood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosedWood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 				6B41C34A246428F500CB5EEF /* AppDelegate.swift */,
 				6B41C34C246428F500CB5EEF /* SceneDelegate.swift */,
 				6B41C34E246428F500CB5EEF /* ContentView.swift */,
+				8C0A953624696C230012999C /* AvecBois.swift */,
+				8C0A953824696D940012999C /* ChoosedWood.swift */,
+				8C0A9530246941070012999C /* Color+extension.swift */,
+				8C0A95322469418D0012999C /* CategorieView.swift */,
+				8C0A9534246941DB0012999C /* CategoriesData.swift */,
 				02388FE124693E02004B3B90 /* categorie.swift */,
 				6B41C350246428F700CB5EEF /* Assets.xcassets */,
 				6B41C355246428F700CB5EEF /* LaunchScreen.storyboard */,
@@ -151,8 +166,13 @@
 			files = (
 				6B41C34B246428F500CB5EEF /* AppDelegate.swift in Sources */,
 				02388FE224693E02004B3B90 /* categorie.swift in Sources */,
+				8C0A95332469418D0012999C /* CategorieView.swift in Sources */,
+				8C0A953924696D940012999C /* ChoosedWood.swift in Sources */,
+				8C0A9531246941070012999C /* Color+extension.swift in Sources */,
 				6B41C34D246428F500CB5EEF /* SceneDelegate.swift in Sources */,
+				8C0A953724696C230012999C /* AvecBois.swift in Sources */,
 				6B41C34F246428F500CB5EEF /* ContentView.swift in Sources */,
+				8C0A9535246941DB0012999C /* CategoriesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
