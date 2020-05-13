@@ -24,6 +24,7 @@
 		8C0A953924696D940012999C /* ChoosedWood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A953824696D940012999C /* ChoosedWood.swift */; };
 		8C4235E2246A87E600EDB024 /* CategoriesDechetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4235E1246A87E600EDB024 /* CategoriesDechetsView.swift */; };
 		8C4235EC246AD73600EDB024 /* Categorie2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4235EB246AD73600EDB024 /* Categorie2View.swift */; };
+		8CE054F1246BF30E009F9A79 /* SBSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE054F0246BF30E009F9A79 /* SBSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		8C0A953824696D940012999C /* ChoosedWood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosedWood.swift; sourceTree = "<group>"; };
 		8C4235E1246A87E600EDB024 /* CategoriesDechetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDechetsView.swift; sourceTree = "<group>"; };
 		8C4235EB246AD73600EDB024 /* Categorie2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie2View.swift; sourceTree = "<group>"; };
+		8CE054F0246BF30E009F9A79 /* SBSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				6B41C34A246428F500CB5EEF /* AppDelegate.swift */,
 				6B41C34C246428F500CB5EEF /* SceneDelegate.swift */,
 				6B41C34E246428F500CB5EEF /* ContentView.swift */,
+				8CE054F0246BF30E009F9A79 /* SBSwiftUIView.swift */,
 				8C4235E1246A87E600EDB024 /* CategoriesDechetsView.swift */,
 				8C0A953624696C230012999C /* AvecBois.swift */,
 				8C0A953824696D940012999C /* ChoosedWood.swift */,
@@ -189,6 +192,7 @@
 			files = (
 				6B41C34B246428F500CB5EEF /* AppDelegate.swift in Sources */,
 				02388FE224693E02004B3B90 /* categorie.swift in Sources */,
+				8CE054F1246BF30E009F9A79 /* SBSwiftUIView.swift in Sources */,
 				8C0A95332469418D0012999C /* CategorieView.swift in Sources */,
 				8C4235EC246AD73600EDB024 /* Categorie2View.swift in Sources */,
 				8C4235E2246A87E600EDB024 /* CategoriesDechetsView.swift in Sources */,
