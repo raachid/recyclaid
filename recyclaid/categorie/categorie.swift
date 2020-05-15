@@ -23,7 +23,7 @@ struct categorie: View {
                 
                 Text(selectedCategorie.descpCategorie).padding()
             
-                
+                Text("ça marche ?")
                 
                  
                 HStack {
