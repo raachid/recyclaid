@@ -9,34 +9,47 @@
 import SwiftUI
 
 struct categorie: View {
+    @State var selectedCategorie: Categorie
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
         NavigationView {
-        VStack{
-        ZStack{
-            Rectangle()
-            .fill(Color.offOrange)
-            .frame(width: 100, height: 100)
-electromenager.imageCategorie
-            Spacer().frame( height: 200)
+            
+            
+            VStack {
                 
-            }
-            Text("L'electoménager représente tous  Les éléments  dit ' blanc '.du  logement . Il peut se réparer ou se jeter. ")
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
-            Spacer().frame( height: 100)
+                
+                CategorieView(imageC: selectedCategorie.imageCategorie!, colorC: selectedCategorie.colorCategorie!).padding(.top, 50)
+                
+                Text(selectedCategorie.descpCategorie).padding()
+            
+                
+                
+                 
+                HStack {
             ButtonRepar()
             ButtonJeter()
+                }
+            }
             
-            }
-            .navigationBarTitle(Text("Electromenager"), displayMode: .inline)
-            
-            }
-            }
-    
+        .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle(Text(selectedCategorie.categorieName), displayMode: .inline)
+        .navigationBarItems(
+            leading:
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("Retour")
+        })
     }
+    }
+}
+
+
 
 struct categorie_Previews: PreviewProvider {
     static var previews: some View {
-        categorie()
+        categorie(selectedCategorie: allCategories[0])
     }
 }
+

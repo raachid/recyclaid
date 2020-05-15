@@ -14,7 +14,7 @@ struct ChoosedWood: View {
         
         
             VStack {
-            bois1.imageBois
+                 bois1.imageBois
             Text(bois1.descpBois)
             Spacer()
                 .navigationBarTitle(bois1.nameBois)

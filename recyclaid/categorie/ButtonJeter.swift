@@ -10,24 +10,34 @@ import SwiftUI
 
 struct ButtonJeter: View {
     var body: some View {
-        ZStack {
-                    
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color.pink)
-                        .frame(width: 200, height: 80)
-                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-                        .shadow(color: Color.white.opacity(0.7), radius: 10  , x: -5, y: -5)
-            HStack(alignment: .top) {
-                        Image(systemName: "trash.fill")
-                
-                
-    Text ("jeter")
+        VStack {
+            ZStack{
+                Circle()
+                    .fill(Color.offWhite)
+                    .shadow(color: Color.black.opacity(0.2), radius: 15, x: 20, y: 20)
+                    .shadow(color: Color.white, radius: 10, x: -5, y: -5)
+                    .frame(width: 50, height: 50)
+                    .padding(12)
+                    .background(Circle()
+                        .fill(Color.offWhite)
+                        .overlay(Circle()
+                            .stroke(Color.offRed.opacity(0.5), lineWidth: 15)
+                            .blur(radius: 100)))
+                Image(systemName: "trash.fill").foregroundColor(Color.offRed).frame(width: 90, height: 90)
             }
+            Text ("Jeter")
             
-                    
-                }
-            }
         }
+    }
+    
+    
+    
+}
+
+
+
+
+
 
 struct ButtonJeter_Previews: PreviewProvider {
     static var previews: some View {

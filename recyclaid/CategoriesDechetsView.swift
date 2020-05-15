@@ -20,7 +20,7 @@ struct CategoriesDechetsView: View {
            
            
             VStack {
-                Spacer().frame(height: 10)
+                Spacer().frame(height: 20)
                 SearchBarView(searchText: $searchText, showCancelButton: $showCancelButton)
                 if  showCancelButton == true {
                     Form{
@@ -39,18 +39,15 @@ struct CategoriesDechetsView: View {
                    
                 }
                 List {
-                    Button(action: {
-                        self.presentSheet.toggle()
-                    }){
+                  
                     Categorie2View(imageC: recyclables.imageCategorie, colorC: Color.offBluec, nameC: recyclables.categorieName)
-                                }.sheet(isPresented: $presentSheet) {
-                                    ContentView()}
+                               
                   Button(action: {
                                         self.presentSheet.toggle()
                                     }){
                     Categorie2View(imageC: nonrecyclables.imageCategorie, colorC: Color.offGrey, nameC: nonrecyclables.categorieName)
                     }.sheet(isPresented: $presentSheet) {
-                    ContentView()}
+                    categorie(selectedCategorie: allCategories[1])}
                    
                     
                     Categorie2View(imageC: compostables.imageCategorie, colorC: Color.offGreen, nameC: compostables.categorieName)
@@ -59,8 +56,12 @@ struct CategoriesDechetsView: View {
                     Categorie2View(imageC: bricolage.imageCategorie, colorC: Color.offPurple, nameC: volumineux.categorieName)
                     Categorie2View(imageC: multimedias.imageCategorie, colorC: Color.offBluef, nameC: multimedias.categorieName)
                     Categorie2View(imageC: encombrantstriés.imageCategorie, colorC: Color.offTurquoise, nameC: encombrantstriés.categorieName)
+                    Button(action: {
+                        self.presentSheet.toggle()
+                    }){
                     Categorie2View(imageC: electromenager.imageCategorie, colorC: Color.offOrange, nameC: electromenager.categorieName)
-                
+                }.sheet(isPresented: $presentSheet) {
+                                   categorie(selectedCategorie: allCategories[7])}
                 }
                 
             }
